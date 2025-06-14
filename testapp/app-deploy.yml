@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: davidayo97/us-mobile-hello:0639995b3f80e7a14abe34515b7dbf3e622e6d61
+          image: caddy:latest
           ports:
             - containerPort: 80
 ---
@@ -32,7 +32,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: caddy:latest
+    app: nginx
   ports:
     - port: 80
       targetPort: 80
