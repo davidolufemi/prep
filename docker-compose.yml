@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - frontend-2
+
+
+  frontend-2:
+    image: nginx
+    ports:
+    - "9090:80"
+ 
+    
+

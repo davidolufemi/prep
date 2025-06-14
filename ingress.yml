@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  namespace: default
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx 
+  rules:
+    - host: a90786d47d4444135838b745cd453bf4-2101933138.us-east-1.elb.amazonaws.com
+      http:
+        paths:
+          - path: /nginx
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-service
+                port:
+                  number: 8080
+          - path: /caddy
+            pathType: Prefix
+            backend:
+              service:
+                name: caddy-service
+                port:
+                  number: 8080
+          - path: /apache
+            pathType: Prefix
+            backend:
+              service:
+                name: apache-service
+                port:
+                  number: 8080
