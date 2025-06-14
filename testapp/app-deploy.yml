@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: caddy:latest
+          image: davidayo97/us-mobile-hello:0639995b3f80e7a14abe34515b7dbf3e622e6d61
           ports:
             - containerPort: 80
 ---
@@ -35,4 +35,4 @@ spec:
     app: nginx
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 8080
