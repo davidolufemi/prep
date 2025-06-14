@@ -18,9 +18,9 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/davidolufemi/us-mobile-takehome.git
+    repoURL: https://github.com/davidolufemi/prep.git
     targetRevision: HEAD
-    path: eksapp
+    path: .
   
   destination:
     server: https://kubernetes.default.svc
