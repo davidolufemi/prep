@@ -20,7 +20,7 @@ spec:
   source:
     repoURL: https://github.com/davidolufemi/prep.git
     targetRevision: HEAD
-    path: .
+    path: testapp
   
   destination:
     server: https://kubernetes.default.svc
