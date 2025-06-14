@@ -1,0 +1,12 @@
+# app-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: caddy-service
+spec:
+  selector:
+    app: caddy
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
