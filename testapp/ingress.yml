@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx 
   rules:
-    - host: ae6782d06c9544085a7127bb5d67e083-1044103823.us-east-1.elb.amazonaws.com
+    - host: a08e7c05d9e9344c298967f37cd9fe04-816122718.us-east-1.elb.amazonaws.com
       http:
         paths:
           - path: /nginx
